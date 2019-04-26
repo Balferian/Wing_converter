@@ -2,28 +2,28 @@
 
 set /p "v=Enter sprite name: "
  chcp 949
-MD "data\sprite\·Îºê\%v%\³²"
-MD "data\sprite\·Îºê\%v%\¿©"
+MD "data\sprite\ë¡œë¸Œ\%v%\ë‚¨"
+MD "data\sprite\ë¡œë¸Œ\%v%\ì—¬"
  chcp 949
 
 set "file=sprite\%v%.act"
 set "list=male_sprites.txt"
  chcp 949 >NUL
-for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\·Îºê\%v%\³²\%%j.act"
+for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\ë¡œë¸Œ\%v%\ë‚¨\%%j.act"
 
 
 set "file=sprite\%v%.spr"
 set "list=male_sprites.txt"
  chcp 949 >NUL
-for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\·Îºê\%v%\³²\%%j.spr"
+for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\ë¡œë¸Œ\%v%\ë‚¨\%%j.spr"
 
 
 set "file=sprite\%v%.act"
-set "list=male_sprites.txt"
+set "list=female_sprites.txt"
  chcp 949 >NUL
-for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\·Îºê\%v%\¿©\%%j.act"
+for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\ë¡œë¸Œ\%v%\ì—¬\%%j.act"
 
 set "file=sprite\%v%.spr"
-set "list=male_sprites.txt"
+set "list=female_sprites.txt"
  chcp 949 >NUL
-for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\·Îºê\%v%\¿©\%%j.spr"
+for /f "usebackq delims=" %%i in ("%list%") do for %%j in (%%i) do copy/b "%file%" "data\sprite\ë¡œë¸Œ\%v%\ì—¬\%%j.spr"
